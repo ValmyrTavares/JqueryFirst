@@ -1,16 +1,14 @@
-1 Aqui eu lembro a forma de por uma função para ser disparada em 
-jquery, que é ela inteira dentro de um parenteses, que faz
-tudo ser iniciado
+Nesse commit eu coloquei o contador de palavras e de letras digitadas a partir
+da função marcadoresDigitados, segunda função ele pega o campo e 
+acrescentar um on, que dentro da documentação diz que vc pode colocar 
+vários eventos a um elemento eu preciso testar isso melhor, talvez no próximo
+commit eu dedique inteiramente a testar isso. Em linhas gerais o campo.on 
+acrescentar um evento de input que a cada digitação ele é disparado. Não
+lembrava mais desse evento. E temos uma variável conteudo apontado para 
+campo.val(), que claro que é o que pega o valor da textarea
 
-Ai comecei ela primeira função que pega a frase principal
-conta a quantidade de letras e coloca no html 
+no numCaracteresDigitados ele conta a quantidade de letras e no numPalavrasDigitadas
+conta as palavras, as letras são contadas com o length e as palavras com a 
+ajuda do split. Ambras são printadas automaticamente os valores para o html
 
-E depois usa o split para contar a quantidade de palavras
-
-Se vc não lembra o que o split faz, ele pega um string e 
-transforma em um array, separando a partir do elemento que estiver
-dentro do parenteses, nesse caso é um espaço
-
-No inicio ele pega do html o tempo em segundos que vc tem 
-para digitar a frase
-
+E conforme vai digitando os valores vão sendo atualizados
