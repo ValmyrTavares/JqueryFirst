@@ -5,6 +5,7 @@ console.log(campo)
 $(function(){
     contadorFrasePrincipal()
     marcadoresDigitados()
+    inicializacronometro()
 })
 
 function contadorFrasePrincipal(){
@@ -22,6 +23,20 @@ function marcadoresDigitados(){
         $(".letras-digitadas").text(numCaracteresDigitados)
         numPalavrasDigitados = conteudo.split(" ").length
         $(".palavras-digitadas").text(numPalavrasDigitados  )
+    })
+}
+
+function inicializacronometro(){
+    var tempoRestante = tempoInicial;
+    campo.one('focus', function(){
+        stop = setInterval(()=>{
+            tempoRestante --
+            $(".contador-tempo").text(tempoRestante)
+            if (tempoRestante == 0){
+                clearInterval(stop)
+
+            }
+        },1000)
     })
 }
 
