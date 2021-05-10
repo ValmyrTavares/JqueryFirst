@@ -1,5 +1,16 @@
-Eu nesse primeiro commit tenho só a intenção de relenbrar 
-o j QUERY que é um biblioteca que eu encontro muita
-referencia mas infelizmente uso pouco e tenho muitasvezes
-dificuldade de lembrar essas coisas básicas no próximo commit eu vou limpar
-Esses testes e vamos começar construindo o joguinho pra valer
+1 Aqui eu lembro a forma de por uma função para ser disparada em 
+jquery, que é ela inteira dentro de um parenteses, que faz
+tudo ser iniciado
+
+Ai comecei ela primeira função que pega a frase principal
+conta a quantidade de letras e coloca no html 
+
+E depois usa o split para contar a quantidade de palavras
+
+Se vc não lembra o que o split faz, ele pega um string e 
+transforma em um array, separando a partir do elemento que estiver
+dentro do parenteses, nesse caso é um espaço
+
+No inicio ele pega do html o tempo em segundos que vc tem 
+para digitar a frase
+
